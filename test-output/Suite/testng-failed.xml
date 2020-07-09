@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.DemoProfject.CompanyName.ExtentListeners.ExtentListeners"/>
+  </listeners>
   <test name="test(failed)">
     <classes>
-      <class name="com.projectName.companyName.testcases.TC001">
+      <class name="com.projectName.companyName.testcases.fileUpload">
         <methods>
           <include name="setUpFramework"/>
-          <include name="tearDown"/>
           <include name="loginTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.projectName.companyName.testcases.TC001 -->
+      </class> <!-- com.projectName.companyName.testcases.fileUpload -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,5 +1,7 @@
 package com.projectName.companyName.testcases;
 
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -16,10 +18,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeSuite;
+import org.openqa.selenium.JavascriptExecutor;
 
 import com.DemoProfject.CompanyName.Utilities.DriverCapabilities;
 import com.DemoProfject.CompanyName.Utilities.DriverFactory;
 import com.DemoProfject.CompanyName.Utilities.DriverManager;
+import com.DemoProfject.CompanyName.Utilities.JavaScript;
+import com.DemoProfject.CompanyName.Utilities.RobotClass;
 
 public class BaseTest {
 
@@ -109,7 +114,7 @@ public class BaseTest {
 	
 	
 
-	public void openBrowser(String browser) {
+	public void openBrowser(String browser) throws Exception {
 		/*
 		 * Initialize properties Initialize logs load executables
 		 * 
@@ -196,9 +201,10 @@ public class BaseTest {
 		caps = ((RemoteWebDriver) driver).getCapabilities();
 		DriverCapabilities.setCapabilities(caps);
 		
-		
-		
-		
+		JavascriptExecutor js = (JavascriptExecutor)DriverManager.getDriver();
+		JavaScript.setJavaScriptObject(js);
+		Robot r = new Robot();
+		RobotClass.setRobotClassObject(r);
 		
 		
 	}

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="53226" started-at="2020-06-29T17:15:41Z" finished-at="2020-06-29T17:16:34Z">
+  <suite name="Suite" duration-ms="24805" started-at="2020-07-09T16:45:50Z" finished-at="2020-07-09T16:46:15Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="53226" started-at="2020-06-29T17:15:41Z" finished-at="2020-06-29T17:16:34Z">
-      <class name="com.projectName.companyName.testcases.TC001">
-        <test-method status="PASS" signature="setUpFramework()[pri:0, instance:com.projectName.companyName.testcases.TC001@4f063c0a]" name="setUpFramework" is-config="true" duration-ms="12" started-at="2020-06-29T22:45:41Z" finished-at="2020-06-29T22:45:41Z">
+    <test name="test" duration-ms="24805" started-at="2020-07-09T16:45:50Z" finished-at="2020-07-09T16:46:15Z">
+      <class name="com.projectName.companyName.testcases.SKulitesting">
+        <test-method status="PASS" signature="setUpFramework()[pri:0, instance:com.projectName.companyName.testcases.SKulitesting@61ca2dfa]" name="setUpFramework" is-config="true" duration-ms="8" started-at="2020-07-09T22:15:50Z" finished-at="2020-07-09T22:15:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpFramework -->
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.projectName.companyName.testcases.TC001@4f063c0a]" name="loginTest" duration-ms="50971" started-at="2020-06-29T22:45:41Z" data-provider="masterDP" finished-at="2020-06-29T22:46:32Z">
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.projectName.companyName.testcases.SKulitesting@61ca2dfa]" name="loginTest" duration-ms="23505" started-at="2020-07-09T22:15:51Z" data-provider="masterDP" finished-at="2020-07-09T22:16:14Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.projectName.companyName.testcases.TC001@4f063c0a]" name="tearDown" is-config="true" duration-ms="1410" started-at="2020-06-29T22:46:32Z" finished-at="2020-06-29T22:46:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.projectName.companyName.testcases.SKulitesting@61ca2dfa]" name="tearDown" is-config="true" duration-ms="753" started-at="2020-07-09T22:16:14Z" finished-at="2020-07-09T22:16:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.projectName.companyName.testcases.TC001 -->
+      </class> <!-- com.projectName.companyName.testcases.SKulitesting -->
     </test> <!-- test -->
   </suite> <!-- Suite -->
 </testng-results>

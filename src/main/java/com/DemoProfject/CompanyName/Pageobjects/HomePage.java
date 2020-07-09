@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.DemoProfject.CompanyName.ExtentListeners.ExtentListeners;
+
 public class HomePage extends BasePage{
 	
 	
@@ -35,7 +37,7 @@ public class HomePage extends BasePage{
 	public AUTHENTICATIONPAGE clickonsign() {
 		
 		
-		signIn.click();
+		click(signIn,"sign In");
 		
 		
 		return (AUTHENTICATIONPAGE) openPage(AUTHENTICATIONPAGE.class);

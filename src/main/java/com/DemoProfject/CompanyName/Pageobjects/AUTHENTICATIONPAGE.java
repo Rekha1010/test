@@ -25,9 +25,12 @@ public class AUTHENTICATIONPAGE extends BasePage {
 	
 	public void login(String email, String password) {
 
-		this.email.sendKeys(email);		
-		passwd.sendKeys(password);
-		signInButton.click();
+		
+		
+		
+		type(this.email, email, "Email");
+		type(passwd, password, "password");	
+		click(signInButton,"sign In Button");
 	
 	
 	

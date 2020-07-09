@@ -38,7 +38,7 @@ public class ExtentManager {
 		htmlReporter.config().setReportName(fileName);
 
 		extent = new ExtentReports();
-		
+		extent.attachReporter(htmlReporter);
 
 		return extent;
 
