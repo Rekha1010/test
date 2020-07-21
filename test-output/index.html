@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.projectName.companyName.testcases.SKulitesting" hash-for-method="loginTest({browser=chrome, password=Admin@123, email=andrew74444@gmail.com, Runmode=Y})">loginTest({browser=chrome, password=Admin@123, email=andrew74444@gmail.com, Runmode=Y})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.projectName.companyName.testcases.SelectDropDownValues" hash-for-method="loginTest({browser=chrome, password=Admin@123, email=andrew74444@gmail.com, Runmode=Y})">loginTest({browser=chrome, password=Admin@123, email=andrew74444@gmail.com, Runmode=Y})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,7 +120,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.projectName.companyName.testcases.SKulitesting</span>
+              <span class="class-name">com.projectName.companyName.testcases.SelectDropDownValues</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -142,13 +142,13 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.DemoProfject.CompanyName.ExtentListeners.ExtentListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;test&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;test&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.projectName.companyName.testcases.SKulitesting&quot;/&gt;
+      &lt;class name=&quot;com.projectName.companyName.testcases.SelectDropDownValues&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -191,13 +191,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.projectName.companyName.testcases.SKulitesting')
-data.setCell(0, 3, 23505);
+data.setCell(0, 2, 'com.projectName.companyName.testcases.SelectDropDownValues')
+data.setCell(0, 3, 20433);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -223,19 +223,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.projectName.companyName.testcases.SKulitesting</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.projectName.companyName.testcases.SelectDropDownValues</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUpFramework</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginTest({browser=chrome, password=Admin@123, email=andrew74444@gmail.com, Runmode=Y})</span>
-                <span class="method-start">535 ms</span>
+                <span class="method-start">893 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24054 ms</span>
+                <span class="method-start">21331 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">mail</span>
+                <span class="method-start">22486 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviders {
 
-	@DataProvider(name="masterDP",parallel=true)
+	@DataProvider(name="masterDP",parallel=false)
 	public static Object[][] getDataSuite1(Method m) {
 
 		System.out.println(m.getName());

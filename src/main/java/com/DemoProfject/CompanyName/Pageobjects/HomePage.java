@@ -27,7 +27,7 @@ public class HomePage extends BasePage{
 		
 		System.out.println(url);
 		
-		driver.get(url);
+		driver.get("http://automationpractice.com/index.php");
 		
 		return (HomePage) openPage(HomePage.class);
 		

@@ -32,7 +32,7 @@ public class FacebookPage extends BasePage{
 		
 		System.out.println(url);
 		
-		driver.get(url);
+		driver.get("https://www.facebook.com/");
 		
 		return (FacebookPage) openPage(FacebookPage.class);
 		

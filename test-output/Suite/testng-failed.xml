@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
   <listeners>
     <listener class-name="com.DemoProfject.CompanyName.ExtentListeners.ExtentListeners"/>
   </listeners>
-  <test name="test(failed)">
+  <test name="test(failed)" parallel="classes">
     <classes>
-      <class name="com.projectName.companyName.testcases.fileUpload">
+      <class name="com.projectName.companyName.testcases.SelectDropDownValues">
         <methods>
-          <include name="setUpFramework"/>
           <include name="loginTest" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="setUpFramework"/>
         </methods>
-      </class> <!-- com.projectName.companyName.testcases.fileUpload -->
+      </class> <!-- com.projectName.companyName.testcases.SelectDropDownValues -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

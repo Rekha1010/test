@@ -5,7 +5,7 @@
 
 
 
-<suite name="Suite">
+<suite name="Suite" thread-count="2" parallel="classes">
 
 <listeners>
 
@@ -19,7 +19,8 @@
 
   <test name="test">
     <classes>
-      <class name="com.projectName.companyName.testcases.SKulitesting"/>
+      <class name="com.projectName.companyName.testcases.SelectDropDownValues"/>
+      
     
     </classes>
   </test> <!-- Test -->

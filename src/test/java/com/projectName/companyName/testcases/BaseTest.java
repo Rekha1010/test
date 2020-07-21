@@ -10,13 +10,18 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import javax.mail.MessagingException;
+import javax.mail.internet.AddressException;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+//import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -24,6 +29,7 @@ import com.DemoProfject.CompanyName.Utilities.DriverCapabilities;
 import com.DemoProfject.CompanyName.Utilities.DriverFactory;
 import com.DemoProfject.CompanyName.Utilities.DriverManager;
 import com.DemoProfject.CompanyName.Utilities.JavaScript;
+import com.DemoProfject.CompanyName.Utilities.MonitoringMail;
 import com.DemoProfject.CompanyName.Utilities.RobotClass;
 
 public class BaseTest {
@@ -218,5 +224,13 @@ public class BaseTest {
 
 	}
 	
+	@AfterSuite
+	public void mail() throws AddressException, MessagingException  {
+		MonitoringMail mm = new MonitoringMail();
+		String[] x={"rekha10511@gmail.com"}; 
+		mm.sendMail("smtp.gmail.com", "rekha10511@gmail.com", x, "testMail", "messageBody");
+		
+		
+	}
 	
 }

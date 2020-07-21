@@ -32,7 +32,7 @@ public class w3schoolsPage extends BasePage {
 
 	public w3schoolsPage open(String url) {
 
-		driver.get(url);
+		driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_open6");
 
 		return (w3schoolsPage) openPage(w3schoolsPage.class);
 

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24805" started-at="2020-07-09T16:45:50Z" finished-at="2020-07-09T16:46:15Z">
+  <suite name="Suite" duration-ms="22020" started-at="2020-07-21T16:26:30Z" finished-at="2020-07-21T16:26:52Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="24805" started-at="2020-07-09T16:45:50Z" finished-at="2020-07-09T16:46:15Z">
-      <class name="com.projectName.companyName.testcases.SKulitesting">
-        <test-method status="PASS" signature="setUpFramework()[pri:0, instance:com.projectName.companyName.testcases.SKulitesting@61ca2dfa]" name="setUpFramework" is-config="true" duration-ms="8" started-at="2020-07-09T22:15:50Z" finished-at="2020-07-09T22:15:50Z">
+    <test name="test" duration-ms="22020" started-at="2020-07-21T16:26:30Z" finished-at="2020-07-21T16:26:52Z">
+      <class name="com.projectName.companyName.testcases.SelectDropDownValues">
+        <test-method status="PASS" signature="setUpFramework()[pri:0, instance:com.projectName.companyName.testcases.SelectDropDownValues@3bd94634]" name="setUpFramework" is-config="true" duration-ms="15" started-at="2020-07-21T16:26:30Z" finished-at="2020-07-21T16:26:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpFramework -->
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.projectName.companyName.testcases.SKulitesting@61ca2dfa]" name="loginTest" duration-ms="23505" started-at="2020-07-09T22:15:51Z" data-provider="masterDP" finished-at="2020-07-09T22:16:14Z">
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.projectName.companyName.testcases.SelectDropDownValues@3bd94634]" name="loginTest" duration-ms="20433" started-at="2020-07-21T16:26:31Z" data-provider="masterDP" finished-at="2020-07-21T16:26:51Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.projectName.companyName.testcases.SKulitesting@61ca2dfa]" name="tearDown" is-config="true" duration-ms="753" started-at="2020-07-09T22:16:14Z" finished-at="2020-07-09T22:16:15Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.projectName.companyName.testcases.SelectDropDownValues@3bd94634]" name="tearDown" is-config="true" duration-ms="704" started-at="2020-07-21T16:26:51Z" finished-at="2020-07-21T16:26:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.projectName.companyName.testcases.SKulitesting -->
+        <test-method status="PASS" signature="mail()[pri:0, instance:com.projectName.companyName.testcases.SelectDropDownValues@3bd94634]" name="mail" is-config="true" duration-ms="6472" started-at="2020-07-21T16:26:52Z" finished-at="2020-07-21T16:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mail -->
+      </class> <!-- com.projectName.companyName.testcases.SelectDropDownValues -->
     </test> <!-- test -->
   </suite> <!-- Suite -->
 </testng-results>
